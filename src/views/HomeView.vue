@@ -27,16 +27,19 @@ const decrease=()=> store.commit("decrement");
 </template>
 
 
-<style lang="scss" scoped>
+<style  scoped>
 main{
-  width: 100%;
-  height: 100vh;
+  width: 90%;
+  height: 90%;
   display: flex;
   flex-direction: column;
- align-items: center;
- justify-content: center;
- border: 2px solid;
- section{
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+
+
+}
+section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +50,6 @@ main{
   padding: 1rem 7rem;
   border: 2px solid black;
  }
-}
 div{
   width: 100%;
   display: flex;
