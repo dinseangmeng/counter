@@ -14,15 +14,22 @@ const decrease=()=> store.commit("decrement");
     <section>
       <h1>{{$store.state.count}} </h1>
       <div>
-  
         <Button text="-"   @isClicked="decrease" />
         <Button text="+"  @isClicked="increase"  />
-  
       </div>
-      <Button text="reset" colorBg="red" isFull="true" @isClicked="$store.commit('reset')"/>
-      <br>
+
+
+      <Button text="Reset" colorBg="red" isFull="true" @isClicked="$store.commit('reset')"/>
+
+
+      <router-link :to="{name:'about'}">
+        <Button  isFull="true" text="About" colorBg="blue" />
+      </router-link>
     </section>
-    <!-- <router-link :to="{name:'about'}"><Button text="about"/></router-link> -->
+
+<center>
+
+</center>
   </main>
 </template>
 
