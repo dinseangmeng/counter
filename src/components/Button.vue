@@ -21,7 +21,11 @@
     }
 </script>
 <template>
-    <button :class=" isFull? 'full': ''" :style="{'background-color':colorBg}" @click="isClicked()" >{{text}}</button>
+    <button :class=" isFull? 'full': ''" 
+    :style="{'background-color':colorBg}" 
+    @click="isClicked()" 
+    @keypress.prevent
+    >{{text}}</button>
 </template>
 
 <style lang="scss" scoped>
