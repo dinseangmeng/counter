@@ -4,7 +4,7 @@ import { createStore } from 'vuex'
 // Create a new store instance.
 export default createStore({
   state : {
-      count: localStorage.getItem("count")
+      count: localStorage.getItem("count")==null? 0: localStorage.getItem("count")
   },
   mutations: {
     increment (state) {
